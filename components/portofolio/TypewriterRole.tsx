@@ -1,14 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 
 export default function TypewriterRole() {
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const roles = ["Frontend Developer", "Web Developer", "AI Enthusiast"];
+  const roles = useMemo(
+    () => ["Frontend Developer", "Web Developer", "AI Enthusiast"],
+    []
+  );
 
   // Typewriter effect
   useEffect(() => {
