@@ -7,12 +7,10 @@ import Link from "next/link";
 import { useState } from "react";
 import SectionHeader from "./SectionHeader";
 
+const INITIAL_FORM = { name: "", email: "", message: "" };
+
 export default function ContactSection() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [formData, setFormData] = useState(INITIAL_FORM);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<
     "idle" | "success" | "error"
@@ -21,37 +19,27 @@ export default function ContactSection() {
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus("idle");
-
     try {
-      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "";
-      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "";
-      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ?? "";
-
       await emailjs.send(
-        serviceId,
-        templateId,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "",
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "",
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          to_email: "lightify6@gmail.com",
+          to_email: "imam.12ra.kkpi@gmail.com",
         },
-        publicKey
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ?? ""
       );
-
       setSubmitStatus("success");
-      setFormData({ name: "", email: "", message: "" });
+      setFormData(INITIAL_FORM);
     } catch {
       setSubmitStatus("error");
     } finally {
@@ -109,7 +97,6 @@ export default function ContactSection() {
                   placeholder="Your full name"
                 />
               </motion.div>
-
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -134,7 +121,6 @@ export default function ContactSection() {
                 />
               </motion.div>
             </div>
-
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -158,7 +144,6 @@ export default function ContactSection() {
                 placeholder="Tell me about your project or idea..."
               />
             </motion.div>
-
             <motion.div
               className="text-center"
               initial={{ opacity: 0, y: 20 }}
@@ -197,7 +182,6 @@ export default function ContactSection() {
                   </>
                 )}
               </motion.button>
-
               {submitStatus === "success" && (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
@@ -230,7 +214,6 @@ export default function ContactSection() {
                   </button>
                 </motion.div>
               )}
-
               {submitStatus === "error" && (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
@@ -247,7 +230,7 @@ export default function ContactSection() {
                   </div>
                   <p className="text-red-600 text-left dark:text-red-500 text-sm mt-1">
                     Please try again or contact me directly at
-                    lightify6@gmail.com
+                    imam.12ra.kkpi@gmail.com
                   </p>
                   <button
                     type="button"
@@ -279,7 +262,7 @@ export default function ContactSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
-                href="mailto:lightify6@gmail.com"
+                href="mailto:imam.12ra.kkpi@gmail.com"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 border-2 border-gray-300 hover:border-gray-400 dark:border-gray-600 dark:hover:border-gray-500 rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 <Icon
@@ -290,10 +273,10 @@ export default function ContactSection() {
                 Send Email
               </Link>
             </motion.div>
-
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
-                href="/CV.pdf"
+                href="https://drive.google.com/file/d/1MHzLkmxlFQyNIPgMVdliAOxdwfn3dyNd/view?usp=sharing"
+                target="_blank"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 border-2 border-gray-300 hover:border-gray-400 dark:border-gray-600 dark:hover:border-gray-500 rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 <Icon icon="solar:download-outline" width={18} height={18} />

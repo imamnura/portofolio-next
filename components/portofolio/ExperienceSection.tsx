@@ -3,54 +3,83 @@
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
+import Telkom from "@/public/telkom.png";
+import Blanja from "@/public/blanja.png";
+import Image from "next/image";
 
 const experience = [
   {
-    role: "Software Developer",
-    company: "Upwork",
-    period: "January 2020 — Present",
-    type: "Freelance",
-    companyIcon: "fa6-brands:square-upwork",
-    companyColor: "from-green-500 to-green-600",
+    role: "Frontend Developer",
+    period: "November 2020 — Present",
+    company: "Telkom Indonesia",
+    companyLogo: (
+      <Image
+        src={Telkom}
+        alt={`TelkomIcon`}
+        width={40}
+        height={40}
+        className="w-full h-full object-contain"
+      />
+    ),
+    companyColor: "from-rose-200 to-rose-400",
     description:
-      "Delivered high-quality projects across diverse domains, including web and mobile applications, API development, and cloud integrations (AWS, GCP).",
+      "Delivered high-quality web projects for Telkom's Wholesale Service Division, including the MyCarrier platform with a landing page and management dashboard.",
     achievements: [
-      "Achieved Top-Rated status with a 91% job success score",
-      "Completed 10+ projects focusing on scalable solutions",
-      "Consistently praised for skillfulness, quick learning, and strong communication",
-      "Earned repeated engagements through reliability and expertise",
+      "Delivered a high-performance landing page and management dashboard for Telkom's Wholesale Service Division (MyCarrier) using React, Next.js, Material UI, Redux, Firebase, ensuring excellent SEO and fast load times.",
+      "Implemented advanced UI/UX features, including drag-and-drop boards (Trello/Jira style), lead management, broadcast messaging, offering letter & purchase order creation, and delivery tracking—improving operational efficiency for end-users.",
+      "Built robust content management capabilities for products, articles, events, banners, and homepage customization, enabling non-technical teams to manage digital content seamlessly.",
+      "Developed integrated billing and payment modules (invoice, payment, claims, dunning, reconciliation, billing reminder), streamlining financial operations and reducing processing time.",
+      "Ensured code quality with unit testing (Jest & Enzyme) and reusable UI components via Storybook, increasing maintainability and reducing bugs in production",
+      "Optimized for scalability & maintainability, resulting in a platform capable of handling complex workflows and large datasets while maintaining a smooth user experience.",
+      "Deployed with DevOps stack Jenkins for CI/CD, Docker for containerization, Kubernetes on Red Hat OpenShift for orchestration, and SonarQube for quality gates.",
+      "Led the Front-End team within the “Explore” squad (3 FE, 2 BE, 1 UI/UX, 1 QA) to ship Content Management and User Permission modules to production on sprint schedule; increased team productivity and delivery predictability through disciplined Agile practices and data-driven retrospectives I facilitated.",
     ],
     technologies: [
-      "JavaScript",
-      "Python",
-      "Node.js",
-      "AWS",
-      "GCP",
-      "OpenAI API",
-      "LangChain",
+      "Typescript",
+      "React",
+      "Next.js",
+      "Material UI",
+      "Tailwind CSS",
+      "Redux",
+      "Zustand",
+      "Jest & Enzyme",
+      "Firebase",
+      "Storybook",
     ],
   },
   {
-    role: "HIMS Master Trainer / PACS Specialist",
-    company: "Public Health Organization, Islamabad",
-    period: "July 2019 — Present",
-    type: "Full-time",
-    companyColor: "from-blue-500 to-blue-600",
-    companyIcon: "mdi:hospital-building",
+    role: "Frontend Developer",
+    period: "September 2019 — November 2020",
+    company: "PT. Metraplasa (Blanja.com)",
+    companyLogo: (
+      <Image
+        src={Blanja}
+        alt={`BlanjaIcon`}
+        width={40}
+        height={40}
+        className="w-full h-full object-contain"
+      />
+    ),
+    companyColor: "from-red-100 to-red-300",
     description:
-      "Spearheaded organizational transformation from paper-based manual systems to completely integrated HIMS and PACS (Picture Archiving and Communication System).",
+      "Blanja.com is a national e-commerce platform, a collaboration between PT Telkom Indonesia and eBay, offering products from local SMEs (UMKM) to international brands. Contributed to developing new features, implementing enhancements, and maintaining the system to ensure reliability, speed, and security for millions of users.",
     achievements: [
-      "Led integration of 45+ radiology machines (CT, MRI, X-Ray, Ultrasound)",
-      "Ensured active monitoring for integration issues",
-      "Acted as master trainer and led support team",
-      "Communicated issues and requirements to backend teams",
+      "Developed and enhanced multiple core features of the Blanja.com platform, improving user experience and transaction flow.",
+      "Optimized front-end performance using Vue.js and SCSS, reducing page load time and enhancing responsiveness.",
+      "Collaborated with cross-functional teams (UI/UX, QA, Backend) to ensure smooth feature delivery from design to deployment.",
+      "Implemented reusable components following the company’s design system, ensuring consistency and faster development cycles.",
+      "Utilized automated CI/CD pipelines with Jenkins, reducing deployment errors and accelerating release schedules.",
+      "Maintained and monitored platform stability, ensuring high availability during promotional campaigns and peak traffic periods.",
     ],
     technologies: [
-      "HIMS",
-      "PACS",
-      "System Integration",
-      "Healthcare IT",
-      "Training & Support",
+      "Vue.js",
+      "SCSS",
+      "Lodash",
+      "Postman",
+      "Git",
+      "Jenkins",
+      "Jira",
+      "Design System.",
     ],
   },
 ];
@@ -94,7 +123,7 @@ export default function ExperienceSection() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
-      className="mb-16 relative overflow-hidden"
+      className="mb-16 relative overflow-hidden md:mb-24 lg:mb-32"
     >
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/5 rounded-full blur-3xl" />
@@ -108,7 +137,7 @@ export default function ExperienceSection() {
           tagIcon="solar:case-bold"
           heading="Experience"
           showUnderline={false}
-          description="My professional journey and the impact I've made across different domains"
+          description="My journey as a Front-End Engineer delivering UI that’s fast, accessible, and business-driven."
           centered
         />
 
@@ -132,12 +161,7 @@ export default function ExperienceSection() {
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     className={`w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-2xl md:rounded-3xl bg-gradient-to-br ${exp.companyColor} flex items-center justify-center shadow-xl md:shadow-2xl mb-3 md:mb-4 relative overflow-hidden group-hover:shadow-2xl md:group-hover:shadow-3xl transition-all duration-500`}
                   >
-                    <Icon
-                      icon={exp.companyIcon}
-                      className="text-white w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 relative z-10"
-                      width={40}
-                      height={40}
-                    />
+                    {exp.companyLogo}
                     <div
                       className={`absolute inset-0 bg-gradient-to-br ${exp.companyColor} opacity-0 group-hover:opacity-20 transition-opacity duration-500`}
                     />
@@ -264,50 +288,6 @@ export default function ExperienceSection() {
               )}
             </motion.div>
           ))}
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.5 }}
-          viewport={{ once: true }}
-          className="mt-16 md:mt-24 text-center px-4 md:px-6"
-        >
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 max-w-4xl mx-auto">
-            <motion.div
-              whileHover={{ scale: 1.05, y: -5 }}
-              className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/50 to-blue-100/30 dark:from-blue-950/20 dark:to-blue-900/10 border border-blue-200/30 dark:border-blue-800/20 hover:border-blue-300/50 dark:hover:border-blue-600/30 transition-all duration-500"
-            >
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">
-                5+
-              </div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">
-                Years Experience
-              </div>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.05, y: -5 }}
-              className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-green-50/50 to-green-100/30 dark:from-green-950/20 dark:to-green-900/10 border border-green-200/30 dark:border-green-800/20 hover:border-green-300/50 dark:hover:border-green-600/30 transition-all duration-500"
-            >
-              <div className="text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">
-                50+
-              </div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">
-                Projects Completed
-              </div>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.05, y: -5 }}
-              className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-purple-50/50 to-purple-100/30 dark:from-purple-950/20 dark:to-purple-900/10 border border-purple-200/30 dark:border-purple-800/20 hover:border-purple-300/50 dark:hover:border-purple-600/30 transition-all duration-500 sm:col-span-2 lg:col-span-1"
-            >
-              <div className="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">
-                91%
-              </div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">
-                Success Rate
-              </div>
-            </motion.div>
-          </div>
         </motion.div>
       </div>
     </motion.section>

@@ -24,209 +24,206 @@ type Certificate = {
 
 const certifications: Certificate[] = [
   {
-    title: "DevOps Essentials",
-    provider: "IBM",
-    platform: "Coursera",
-    issued: "November 2023",
-    credentialId: "P67DLWJP2GL7",
-    skills: ["Continuous Integration", "DevOps", "Product Development", "IaaC"],
-    providerIcon: "lineicons:ibm",
-    platformIcon: "logos:coursera",
+    title: "Ai For React Developers",
+    provider: "LinkedIn",
+    platform: "LinkedIn",
+    issued: "August 2025",
+    credentialId:
+      "53110fe7c583362e3dea0e95cc0a80f9c8f7ed92e741037fe50d45995adfc567",
+    skills: ["React JS", "Artificial Intelligence (AI)"],
+    providerIcon: "logos:linkedin-icon",
+    platformIcon: "logos:linkedin",
     color: "from-blue-500 to-blue-600",
-    certificatePreview: "/certificates/P67DLWJP2GL7_DEVOPS.png",
+    certificatePreview: "/ai-for-react-development.jpeg",
     providerIconSize: 64,
     platformIconSize: 88,
   },
   {
-    title: "Git and GitHub Essentials",
-    provider: "IBM",
-    platform: "Coursera",
-    issued: "January 2023",
-    credentialId: "YYQL3U4QAZJF",
-    skills: ["Version Control", "Git", "GitHub", "GitLab", "Open Source"],
-    providerIcon: "lineicons:ibm",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-blue-600",
-    certificatePreview: "/certificates/YYQL3U4QAZJF_GIT_GITHUB.png",
-    providerIconSize: 64,
-    platformIconSize: 88,
-  },
-  {
-    title: "Web Development with HTML, CSS, JavaScript Essentials",
-    provider: "IBM",
-    platform: "Coursera",
-    issued: "January 2023",
-    credentialId: "3UPD6SABRD3B",
-    skills: ["IBM Cloud", "HTML", "CSS", "Full-Stack Development"],
-    providerIcon: "lineicons:ibm",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-blue-600",
-    certificatePreview: "/certificates/3UPD6SABRD3B_INTRO_WEB.png",
-    providerIconSize: 64,
-    platformIconSize: 88,
-  },
-  {
-    title: "Introduction to Cloud Computing",
-    provider: "IBM",
-    platform: "Coursera",
-    issued: "January 2023",
-    credentialId: "verified-credly",
+    title: "Building Website Interactivity with JavaScript",
+    provider: "LinkedIn",
+    platform: "LinkedIn",
+    issued: "June 2025",
+    credentialId:
+      "1369bd7236418cbb51acfc4a7f7689bccab72a998d392277338619bc6358ab8c",
     skills: [
-      "Container",
-      "IaaS",
-      "IBM Cloud",
-      "Architecture",
-      "Cloud Computing",
-      "PaaS",
-      "DevOps",
-    ],
-    providerIcon: "lineicons:ibm",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-blue-600",
-    certificatePreview: "/certificates/EXFQ7QMJYUQQ_AWS.png",
-    providerIconSize: 64,
-    platformIconSize: 88,
-  },
-  {
-    title: "Introduction to Databases for Back-End Development",
-    provider: "Meta",
-    platform: "Coursera",
-    issued: "February 2023",
-    credentialId: "5FNQEGLH78UD",
-    skills: [
-      "Database Design",
-      "SQL",
-      "Backend Development",
-      "Data Management",
-    ],
-    providerIcon: "logos:meta-icon",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-purple-600",
-    certificatePreview: "/certificates/5FNQEGLH78UD_DATABASES_FOR_BACKEND.png",
-    providerIconSize: 64,
-    platformIconSize: 88,
-  },
-  {
-    title: "Introduction to Back-End Development",
-    provider: "Meta",
-    platform: "Coursera",
-    issued: "January 2023",
-    credentialId: "2Y8NRQC5MP96",
-    skills: [
-      "Backend Development",
-      "APIs",
-      "Server-Side Programming",
+      "Representational State Transfer (REST)",
       "Web Development",
+      "GitHub",
+      "Javascript",
     ],
-    providerIcon: "logos:meta-icon",
-    platformIcon: "logos:coursera",
+    providerIcon: "logos:linkedin-icon",
+    platformIcon: "logos:linkedin",
     color: "from-blue-500 to-purple-600",
-    certificatePreview: "/certificates/2Y8NRQC5MP96_INTRO_BE.png",
+    certificatePreview: "/building-website-interactivity-with-javascript.jpeg",
     providerIconSize: 64,
     platformIconSize: 88,
   },
   {
-    title: "Django Web Framework",
-    provider: "Meta",
-    platform: "Coursera",
-    issued: "February 2023",
-    credentialId: "3YRA842UKERB",
-    skills: ["Django", "Python", "Web Framework", "MVC Architecture"],
-    providerIcon: "logos:meta-icon",
-    platformIcon: "logos:coursera",
+    title: "Interactive React for the Web",
+    provider: "LinkedIn",
+    platform: "LinkedIn",
+    issued: "June 2025",
+    credentialId:
+      "976a9726bd36fed9639927c46fade0f7975e783022b55c030bb52b9525b281e1",
+    skills: ["Representational State Transfer (REST)", "React JS", "Github"],
+    providerIcon: "logos:linkedin-icon",
+    platformIcon: "logos:linkedin",
     color: "from-blue-500 to-purple-600",
-    certificatePreview: "/certificates/3YRA842UKERB_DJANGO.png",
+    certificatePreview: "/interactive-react-for-web.jpeg",
     providerIconSize: 64,
     platformIconSize: 88,
   },
   {
-    title: "Programming in Python",
-    provider: "Meta",
-    platform: "Coursera",
-    issued: "January 2023",
-    credentialId: "2AUUVS958L5Y",
-    skills: ["Python", "Programming", "Data Structures", "Algorithms"],
-    providerIcon: "logos:meta-icon",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-purple-600",
-    certificatePreview: "/certificates/2AUUVS958L5Y_PYTHON.png",
-    providerIconSize: 64,
-    platformIconSize: 88,
-  },
-  {
-    title: "Version Control",
-    provider: "Meta",
-    platform: "Coursera",
-    issued: "January 2023",
-    credentialId: "BLGJKHN6UTSF",
-    skills: ["Git", "Version Control", "Collaboration", "Software Development"],
-    providerIcon: "logos:meta-icon",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-purple-600",
-    certificatePreview: "/certificates/BLGJKHN6UTSF_version_control.png",
-    providerIconSize: 64,
-    platformIconSize: 88,
-  },
-  {
-    title: "Introduction to Databases",
-    provider: "Meta",
-    platform: "Coursera",
-    issued: "February 2023",
-    credentialId: "N9LJFAWZXTMA",
+    title: "React Essential Training",
+    provider: "LinkedIn",
+    platform: "LinkedIn",
+    issued: "June 2025",
+    credentialId:
+      "6a6f2b1cff096cb429e0f18d2a659070556d52ea854e65b21a94278e350f8467",
     skills: [
-      "Database Fundamentals",
-      "SQL",
-      "Data Management",
-      "Database Design",
+      "React.js",
+      "Web Development",
+      "Progressive Web Applications (PWAs)",
     ],
-    providerIcon: "logos:meta-icon",
-    platformIcon: "logos:coursera",
+    providerIcon: "logos:linkedin-icon",
+    platformIcon: "logos:linkedin",
     color: "from-blue-500 to-purple-600",
-    certificatePreview: "/certificates/N9LJFAWZXTMA_DATABASES.png",
+    certificatePreview: "/react-essential-training.jpeg",
     providerIconSize: 64,
     platformIconSize: 88,
   },
   {
-    title: "AWS Cloud Technical Essentials",
-    provider: "Amazon Web Services",
-    platform: "Coursera",
-    issued: "February 2023",
-    credentialId: "EXFQ7QMJYUQQ",
-    skills: ["AWS", "Cloud Computing", "EC2", "S3", "IAM", "VPC"],
-    providerIcon: "skill-icons:aws-dark",
-    platformIcon: "logos:coursera",
-    color: "from-orange-500 to-red-600 text-black dark:text",
-    certificatePreview: "/certificates/EXFQ7QMJYUQQ_AWS.png",
-    providerIconSize: 44,
+    title: "React: Building Progressive Web Apps (PWAs)",
+    provider: "LinkedIn",
+    platform: "LinkedIn",
+    issued: "June 2025",
+    credentialId:
+      "6d9846dfabda2bc0b34098c87754a285d7e0f5929ec8a0aadf8813d0a1e7d6ae",
+    skills: ["Progressive Web Apps (PWAs)", "React"],
+    providerIcon: "logos:linkedin-icon",
+    platformIcon: "logos:linkedin",
+    color: "from-blue-500 to-purple-600",
+    certificatePreview: "/building-pwa.jpeg",
+    providerIconSize: 64,
     platformIconSize: 88,
   },
   {
-    title: "Foundations: Data, Data, Everywhere",
+    title: "Google IT Support Professional",
     provider: "Google",
     platform: "Coursera",
-    issued: "November 2022",
-    credentialId: "6RUAYHXFV5XZ",
-    skills: ["Data Analysis", "Data Management", "Statistical Analysis"],
-    providerIcon: "logos:google",
+    issued: "Februari 2025",
+    credentialId: "1029c137-3ff9-45f5-b3f2-3885ce15cb57",
+    skills: [
+      "Computer Networking",
+      "Customer Service",
+      "IT Support",
+      "Operating Systems",
+      "Troubleshooting",
+    ],
+    providerIcon: "logos:google-icon",
     platformIcon: "logos:coursera",
-    color: "from-indigo-500 to-purple-600",
-    certificatePreview: "/certificates/6RUAYHXFV5XZ_Foundations_data.png",
+    color: "from-blue-500 to-blue-600",
+    certificatePreview: "/itsupport.png",
     providerIconSize: 64,
     platformIconSize: 88,
   },
   {
-    title: "Databases with SQL",
-    provider: "CS50",
-    platform: "HarvardX",
-    issued: "May 2025",
-    credentialId: "d7be6646-4c57-431e-88a9-ad7b882864e3",
-    skills: ["SQL", "Database", "Data Management", "Data Analysis"],
-    providerIcon: "fa-solid:university",
-    platformIcon: "simple-icons:edx",
-    color: "from-indigo-500 to-purple-600",
-    certificatePreview: "/certificates/CS50_SQL.png",
-    providerIconSize: 44,
-    platformIconSize: 44,
+    title: "Quality Assurance Platform & Tools",
+    provider: "Telkom",
+    platform: "myDigiLearn",
+    issued: "January 2024",
+    credentialId: "No. C.TEL D-0412706/PD620/TCU-1B000000/2022",
+    skills: ["Quality Assurance", "Testing", "Automation"],
+    providerIcon: "Telkom",
+    platformIcon: "myDigiLearn",
+    color: "from-blue-500 to-blue-600",
+    certificatePreview: "/qualityassurance.png",
+    providerIconSize: 64,
+    platformIconSize: 88,
+  },
+  {
+    title: "Amazon Web Services (AWS) Cloud Storage",
+    provider: "Telkom",
+    platform: "myDigiLearn",
+    issued: "February 2024",
+    credentialId: "No. C.TEL D-0422405/PD620/TCU-1B000000/2024",
+    skills: ["AWS", "Cloud Storage"],
+    providerIcon: "Telkom",
+    platformIcon: "myDigiLearn",
+    color: "from-blue-500 to-blue-600",
+    certificatePreview: "/aws.png",
+    providerIconSize: 64,
+    platformIconSize: 88,
+  },
+  {
+    title: "DevSecOps Overview & Important Tools",
+    provider: "Telkom",
+    platform: "myDigiLearn",
+    issued: "January 2024",
+    credentialId: "No. C.TEL D-0412685/PD620/TCU-1B000000/2022",
+    skills: ["DevSecOps", "CI/CD"],
+    providerIcon: "Telkom",
+    platformIcon: "myDigiLearn",
+    color: "from-blue-500 to-blue-600",
+    certificatePreview: "/devsecops.png",
+    providerIconSize: 64,
+    platformIconSize: 88,
+  },
+  {
+    title: "Blockchain Fundamental",
+    provider: "Telkom",
+    platform: "myDigiLearn",
+    issued: "January 2024",
+    credentialId: "No. C.TEL D-0412637/PD620/TCU-1B000000/2022",
+    skills: ["Blockchain", "Cryptography", "Smart Contracts"],
+    providerIcon: "Telkom",
+    platformIcon: "myDigiLearn",
+    color: "from-blue-500 to-blue-600",
+    certificatePreview: "/blockchain.png",
+    providerIconSize: 64,
+    platformIconSize: 88,
+  },
+  {
+    title: "Indonesia Scrum Product Owner",
+    provider: "Telkom",
+    platform: "myDigiLearn",
+    issued: "December 2023",
+    credentialId: "No. C.TEL D-0410851/PD620/TCU-1B000000/2022",
+    skills: ["Product Owner", "Scrum", "Agile", "Leadership"],
+    providerIcon: "Telkom",
+    platformIcon: "myDigiLearn",
+    color: "from-blue-500 to-blue-600",
+    certificatePreview: "/productowner.png",
+    providerIconSize: 64,
+    platformIconSize: 88,
+  },
+  {
+    title: "Indonesia Scrum Master I",
+    provider: "Ekipa Ai Consultancy",
+    platform: "Ekipa",
+    issued: "December 2023",
+    credentialId: "FGWJDBWTJC-JKRJKSRH-WHZBHTZDFW",
+    skills: ["Scrum", "Agile"],
+    providerIcon: "Ekipa",
+    platformIcon: "Ekipa",
+    color: "from-blue-500 to-blue-600",
+    certificatePreview: "/ISM.PNG",
+    providerIconSize: 64,
+    platformIconSize: 88,
+  },
+  {
+    title: "Digital Marketing",
+    provider: "Google",
+    platform: "Coursera",
+    issued: "September 2023",
+    credentialId: "77VLZXKUD5MX",
+    skills: ["Google Ads", "Email Marketing", "SEO", "Interviewing Skills"],
+    providerIcon: "logos:google-icon",
+    platformIcon: "logos:coursera",
+    color: "from-blue-500 to-purple-600",
+    certificatePreview: "/digital-marketing.jpeg",
+    providerIconSize: 64,
+    platformIconSize: 88,
   },
 ];
 
@@ -336,19 +333,52 @@ export default function CertificateSection() {
                     className={`h-20 flex items-center justify-between bg-slate-100 dark:bg-slate-900 px-4 ${cert.color} relative overflow-hidden`}
                   >
                     <div className="flex items-center justify-end mr-4 gap-1">
-                      <Icon
-                        icon={cert.providerIcon}
-                        width={cert.providerIconSize}
-                        height={cert.providerIconSize}
-                      />
+                      {cert.providerIcon === "Telkom" ? (
+                        <Image
+                          src="/logo-telkom.png"
+                          alt="Telkom Logo"
+                          width={64}
+                          height={64}
+                        />
+                      ) : cert.providerIcon === "Ekipa" ? (
+                        <Image
+                          src="/ekipa.webp"
+                          alt="Ekipa Logo"
+                          width={64}
+                          height={64}
+                        />
+                      ) : (
+                        <Icon
+                          icon={cert.providerIcon}
+                          width={cert.providerIconSize}
+                          height={cert.providerIconSize}
+                        />
+                      )}
+
                       <span className="text-black dark:text-white text-sm font-bold">
                         ×
                       </span>
-                      <Icon
-                        icon={cert.platformIcon}
-                        width={cert.platformIconSize}
-                        height={cert.platformIconSize}
-                      />
+                      {cert.platformIcon === "myDigiLearn" ? (
+                        <Image
+                          src="/myDigilern-logo.png"
+                          alt="myDigilern Logo"
+                          width={64}
+                          height={64}
+                        />
+                      ) : cert.platformIcon === "Ekipa" ? (
+                        <Image
+                          src="/ekipa.webp"
+                          alt="Ekipa Logo"
+                          width={64}
+                          height={64}
+                        />
+                      ) : (
+                        <Icon
+                          icon={cert.platformIcon}
+                          width={cert.platformIconSize}
+                          height={cert.platformIconSize}
+                        />
+                      )}
                     </div>
                     <div className="flex items-center justify-start gap-0">
                       <div className="relative w-8 h-8 rounded-lg flex items-center justify-center">
@@ -456,7 +486,7 @@ export default function CertificateSection() {
                         href={`https://www.coursera.org/verify/${cert.credentialId}`}
                         target="_blank"
                       >
-                        <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-2 wrap-anywhere w-full">
                           <Icon
                             icon="solar:arrow-right-up-bold"
                             className="text-green-500"
@@ -491,7 +521,7 @@ export default function CertificateSection() {
             ))}
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
@@ -528,7 +558,7 @@ export default function CertificateSection() {
                 </span>
               </div>
             </motion.div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </motion.section>
 
