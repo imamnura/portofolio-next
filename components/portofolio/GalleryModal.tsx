@@ -132,7 +132,7 @@ export default function GalleryModal({
             {/* Content */}
             <Dialog.Content asChild>
               <motion.div
-                className="fixed left-1/2 top-1/2 z-50 w-[94vw] max-w-5xl -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-white/10 bg-neutral-900/90 p-0 shadow-2xl ring-1 ring-black/5"
+                className="fixed left-1/2 top-1/2 z-50 w-[94vw] -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-white/10 bg-neutral-900/90 p-0 shadow-2xl ring-1 ring-black/5 max-w-4xl max-h-[90vh]"
                 initial={{ opacity: 0, y: 24, scale: 0.98 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: 24, scale: 0.98 }}
@@ -314,12 +314,6 @@ export default function GalleryModal({
                         </a>
                       )}
                     </div>
-
-                    <Dialog.Close asChild>
-                      <button className="rounded-xl bg-white/10 px-4 py-2 text-sm text-white ring-1 ring-white/20 transition hover:bg-white/20">
-                        Close
-                      </button>
-                    </Dialog.Close>
                   </div>
                 </div>
               </motion.div>
