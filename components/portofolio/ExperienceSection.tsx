@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
 import Telkom from "@/public/telkom.png";
 import Blanja from "@/public/blanja.png";
+import Juke from "@/public/logo-juke.png";
+import Salt from "@/public/logo-salt.png";
 import Image from "next/image";
 
 const experience = [
@@ -25,14 +27,12 @@ const experience = [
     description:
       "Delivered high-quality web projects for Telkom's Wholesale Service Division, including the MyCarrier platform with a landing page and management dashboard.",
     achievements: [
-      "Delivered a high-performance landing page and management dashboard for Telkom's Wholesale Service Division (MyCarrier) using React, Next.js, Material UI, Redux, Firebase, ensuring excellent SEO and fast load times.",
-      "Implemented advanced UI/UX features, including drag-and-drop boards (Trello/Jira style), lead management, broadcast messaging, offering letter & purchase order creation, and delivery tracking—improving operational efficiency for end-users.",
-      "Built robust content management capabilities for products, articles, events, banners, and homepage customization, enabling non-technical teams to manage digital content seamlessly.",
-      "Developed integrated billing and payment modules (invoice, payment, claims, dunning, reconciliation, billing reminder), streamlining financial operations and reducing processing time.",
-      "Ensured code quality with unit testing (Jest & Enzyme) and reusable UI components via Storybook, increasing maintainability and reducing bugs in production",
-      "Optimized for scalability & maintainability, resulting in a platform capable of handling complex workflows and large datasets while maintaining a smooth user experience.",
-      "Deployed with DevOps stack Jenkins for CI/CD, Docker for containerization, Kubernetes on Red Hat OpenShift for orchestration, and SonarQube for quality gates.",
-      "Led the Front-End team within the “Explore” squad (3 FE, 2 BE, 1 UI/UX, 1 QA) to ship Content Management and User Permission modules to production on sprint schedule; increased team productivity and delivery predictability through disciplined Agile practices and data-driven retrospectives I facilitated.",
+      "Built advanced UI (drag-and-drop boards, lead/broadcast, offer/PO, delivery tracking), resulting in a 25% reduction in end-to-end processing time and enhanced operational efficiency.",
+      "Built integrated billing & payments (invoicing, claims, dunning, reconciliation, reminders), reducing processing time 30–40% and lowering manual errors.",
+      "Enhanced quality by implementing Jest/Enzyme tests and developing Storybook components, leading to >80% reduction in defects and increased component reuse.",
+      "Automated releases with Jenkins CI/CD, Docker, and SonarQube quality gates.",
+      "Led the Front-End team to deliver CMS and User Permissions on schedule, improving squad throughput by 20–30% through disciplined Agile methodologies, effective retrospective meetings, and clear communication.",
+      "Bug-fixing & stability: prioritized high-impact issues in key user journeys; cut customer-facing errors by 35% and improved task success rates through tight collaboration with QA and backend.",
     ],
     technologies: [
       "Typescript",
@@ -45,6 +45,10 @@ const experience = [
       "Jest & Enzyme",
       "Firebase",
       "Storybook",
+      "Google Analytics",
+      "Git",
+      "Jenkins",
+      "REST API",
     ],
   },
   {
@@ -64,12 +68,11 @@ const experience = [
     description:
       "Blanja.com is a national e-commerce platform, a collaboration between PT Telkom Indonesia and eBay, offering products from local SMEs (UMKM) to international brands. Contributed to developing new features, implementing enhancements, and maintaining the system to ensure reliability, speed, and security for millions of users.",
     achievements: [
-      "Developed and enhanced multiple core features of the Blanja.com platform, improving user experience and transaction flow.",
-      "Optimized front-end performance using Vue.js and SCSS, reducing page load time and enhancing responsiveness.",
-      "Collaborated with cross-functional teams (UI/UX, QA, Backend) to ensure smooth feature delivery from design to deployment.",
-      "Implemented reusable components following the company’s design system, ensuring consistency and faster development cycles.",
-      "Utilized automated CI/CD pipelines with Jenkins, reducing deployment errors and accelerating release schedules.",
-      "Maintained and monitored platform stability, ensuring high availability during promotional campaigns and peak traffic periods.",
+      "Optimized Vue/SCSS frontend, cutting page load time by 25–35% (Lighthouse/PageSpeed) and improving responsiveness on low-end devices.",
+      "Shipped reusable, design system based components, accelerating feature delivery by 20% and reducing recurring UI defects.",
+      "Aligned cross functional teams (UI/UX, Backend, QA) through clear communication and clean handoffs, maintained a strong user experience focus from design to release.",
+      "Automated CI/CD with Jenkins, reducing release errors by 40–60% and keeping release cycles on schedule.",
+      "Monitored stability during campaigns/peak traffic, proactively triaged issues to keep the user experience smooth.",
     ],
     technologies: [
       "Vue.js",
@@ -80,6 +83,77 @@ const experience = [
       "Jenkins",
       "Jira",
       "Design System.",
+      "BEM Methodology",
+    ],
+  },
+  {
+    role: "Frontend Developer",
+    period: "January 2019 — September 2019",
+    company: "SALT Indonesia",
+    companyLogo: (
+      <Image
+        src={Salt}
+        alt={`SALTIcon`}
+        width={40}
+        height={40}
+        className="w-full h-full object-contain"
+      />
+    ),
+    companyColor: "from-red-100 to-red-300",
+    description:
+      "SALT delivers smart engineering solutions that integrate intelligence and cutting-edge technology to drive efficiency, adaptability, and innovation. With a future-oriented approach, SALT empowers industries to transform and thrive in the digital era.",
+    achievements: [
+      "Delivered high-traffic landing pages & PDPs (Nutriclub, Bebelac, SGM, BTPN) end-to-end, responsive, pixel perfect UI with Lighthouse scores up 15–25 pts.",
+      "Built the BTPN Tariff Calculator with robust validation and error states maintained accuracy and increased form completion by 10–20%.",
+      "Structured SCSS + BEM for modular, low conflict CSS, speed up iteration by 20% and reduced styling regressions.",
+      "Improved perceived performance via responsive images, lazy loading, minification, and reflow minimization with a mobile first UX focus.",
+      "Collaborated effectively with designers and backend engineers, clear specs and API contracts enabled smooth integrations.",
+    ],
+    technologies: [
+      "Javascript",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "BEM Methodology",
+      "Git",
+      "Jenkins",
+      "Jira",
+      "Design System.",
+    ],
+  },
+  {
+    role: "Junior Software Engineer",
+    period: "September 2017 — January 2019",
+    company: "PT. JUKE Solusi Teknologi",
+    companyLogo: (
+      <Image
+        src={Juke}
+        alt={`JUKE`}
+        width={40}
+        height={40}
+        className="w-full h-full object-contain"
+      />
+    ),
+    companyColor: "from-blue-300 to-blue-500",
+    description:
+      "SALT delivers smart engineering solutions that integrate intelligence and cutting-edge technology to drive efficiency, adaptability, and innovation. With a future-oriented approach, SALT empowers industries to transform and thrive in the digital era.",
+    achievements: [
+      "Shipped MORULA IVF Clinic Information System (patient registration, appointment scheduling, treatment workflows, billing interfaces)  reduced manual re-entry by 30% and improved staff turnaround by 20%",
+      "Built Auto2000 CMS (pages, banners, assets) with role-based permissions and reusable UI—shortened publishing time by 25% and improved content consistency.",
+      "Optimized Laravel/Eloquent + MySQL (indexes, N+1 fixes), cutting key view response times by 35%.",
+      "Delivered responsive, accessible front-end (HTML5, CSS3/Bootstrap, JavaScript), raising mobile form completion by 10–15% and improving UX.",
+      "Collaborated & communicated effectively with designers, backend engineers, and business stakeholders to clarify specs and API contracts—smoother handoffs and fewer rework cycles.",
+      "Strengthened reliability with input validation, error handling, and code reviews—20% fewer production defects in critical flows.",
+    ],
+    technologies: [
+      "mySQL",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "Javascript",
+      "Git",
+      "REST API",
+      "Laravel",
     ],
   },
 ];

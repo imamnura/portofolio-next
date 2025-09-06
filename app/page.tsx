@@ -1,12 +1,12 @@
 "use client";
 import Navigation from "@/components/portofolio/Navigation";
 import HeroSection from "@/components/portofolio/HeroSection";
-import OverviewSection from "@/components/portofolio/OverviewSection";
+import OverviewSection from "@/components/portofolio/AboutMe";
 import ExperienceSection from "@/components/portofolio/ExperienceSection";
 import CertificateSection from "@/components/portofolio/CertificateSection";
 import ContactSection from "@/components/portofolio/ContactSection";
 import Footer from "@/components/portofolio/Footer";
-import ProjectsSection from "@/components/portofolio/Project";
+import ProjectsSection from "@/components/portofolio/FeatureProject";
 
 export default function Portofolio() {
   return (

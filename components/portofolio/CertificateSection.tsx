@@ -30,7 +30,7 @@ const certifications: Certificate[] = [
     issued: "August 2025",
     credentialId:
       "53110fe7c583362e3dea0e95cc0a80f9c8f7ed92e741037fe50d45995adfc567",
-    skills: ["React JS", "Artificial Intelligence (AI)"],
+    skills: ["React", "Artificial Intelligence (AI)"],
     providerIcon: "logos:linkedin-icon",
     platformIcon: "logos:linkedin",
     color: "from-blue-500 to-blue-600",
@@ -65,7 +65,7 @@ const certifications: Certificate[] = [
     issued: "June 2025",
     credentialId:
       "976a9726bd36fed9639927c46fade0f7975e783022b55c030bb52b9525b281e1",
-    skills: ["Representational State Transfer (REST)", "React JS", "Github"],
+    skills: ["Representational State Transfer (REST)", "React", "Github"],
     providerIcon: "logos:linkedin-icon",
     platformIcon: "logos:linkedin",
     color: "from-blue-500 to-purple-600",
@@ -80,11 +80,7 @@ const certifications: Certificate[] = [
     issued: "June 2025",
     credentialId:
       "6a6f2b1cff096cb429e0f18d2a659070556d52ea854e65b21a94278e350f8467",
-    skills: [
-      "React.js",
-      "Web Development",
-      "Progressive Web Applications (PWAs)",
-    ],
+    skills: ["React", "Web Development", "Progressive Web Applications (PWAs)"],
     providerIcon: "logos:linkedin-icon",
     platformIcon: "logos:linkedin",
     color: "from-blue-500 to-purple-600",

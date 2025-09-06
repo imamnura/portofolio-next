@@ -281,13 +281,13 @@ const projects = [
     },
     tech: ["React JS", "ANTD Design", "Redux", "Recharts", "SASS"],
     github: "",
-    live: "https://www.moleawiz.com",
+    live: "https://moleawiz.com",
     gradient: "from-blue-500 to-cyan-500",
     category: "Website Learning System",
   },
 ];
 
-export default function ProjectsSection() {
+export default function FeatureProject() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isShowModal, setIsShowModal] = useState(false);
   const [initialIndex, setInitialIndex] = useState(0);

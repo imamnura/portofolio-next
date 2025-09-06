@@ -22,7 +22,7 @@ const techIconMap: Record<string, string> = {
   Postman: "logos:postman-icon",
 };
 
-export default function OverviewSection() {
+export default function AboutMe() {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -280,7 +280,10 @@ export default function OverviewSection() {
 
                 <motion.div
                   whileHover={{ scale: 1.02, x: 4 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 border border-white/20 dark:border-gray-700/30"
+                  className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 border border-white/20 dark:border-gray-700/30 hover:cursor-pointer"
+                  onClick={() =>
+                    (window.location.href = "https://imamnura.online")
+                  }
                 >
                   <div className="p-1 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md shadow-md">
                     <Icon
@@ -291,8 +294,8 @@ export default function OverviewSection() {
                     />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-gray-900 dark:text-white">
-                      imamnura.dev
+                    <div className="text-sm font-bold text-gray-900 dark:text-white ">
+                      imamnura.online
                     </div>
                   </div>
                 </motion.div>
