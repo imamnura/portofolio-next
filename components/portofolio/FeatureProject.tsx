@@ -211,12 +211,12 @@ const projects = [
     category: "CMS",
   },
   {
-    title: "Moleawiz",
+    title: "MoLeaWiz",
     subtitle: "Digima Asia Platform",
     descriptionShort:
       "An interactive learning media application with features like learning journey tracking, quizzes, assessments, leaderboards, and rewards. Users can monitor their progress and review their experience, while team monitoring enables oversight of all users.",
     description:
-      "Moleawiz is a learning media app offering interactive features such as learning journey tracking, quizzes, assessments, leaderboards, and rewards for active learners. Team monitoring allows supervisors to track user progress and review feedback from customers.",
+      "MoLeaWiz is a learning media app offering interactive features such as learning journey tracking, quizzes, assessments, leaderboards, and rewards for active learners. Team monitoring allows supervisors to track user progress and review feedback from customers.",
     delivery: [
       "Interactive learning journey tracking",
       "Quizzes and assessments for knowledge evaluation",

@@ -24,6 +24,21 @@ type Certificate = {
 
 const certifications: Certificate[] = [
   {
+    title: "React Hooks",
+    provider: "LinkedIn",
+    platform: "LinkedIn",
+    issued: "August 2025",
+    credentialId:
+      "da2681f97f4882698d45b8a31f7a5dd5f5ddaea9fdf85e51eb997588bb4c5720",
+    skills: ["React Hooks"],
+    providerIcon: "logos:linkedin-icon",
+    platformIcon: "logos:linkedin",
+    color: "from-blue-500 to-blue-600",
+    certificatePreview: "/react-hooks.jpeg",
+    providerIconSize: 64,
+    platformIconSize: 88,
+  },
+  {
     title: "Ai For React Developers",
     provider: "LinkedIn",
     platform: "LinkedIn",

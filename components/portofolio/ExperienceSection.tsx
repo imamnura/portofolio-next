@@ -70,7 +70,7 @@ const experience = [
     achievements: [
       "Optimized Vue/SCSS frontend, cutting page load time by 25–35% (Lighthouse/PageSpeed) and improving responsiveness on low-end devices.",
       "Shipped reusable, design system based components, accelerating feature delivery by 20% and reducing recurring UI defects.",
-      "Aligned cross functional teams (UI/UX, Backend, QA) through clear communication and clean handoffs, maintained a strong user experience focus from design to release.",
+      "Coordinated cross-functional teams (UI/UX, Backend, QA) through effective communication and seamless handoffs, ensuring a consistent user experience from design to release and improvement in project delivery efficiency.",
       "Automated CI/CD with Jenkins, reducing release errors by 40–60% and keeping release cycles on schedule.",
       "Monitored stability during campaigns/peak traffic, proactively triaged issues to keep the user experience smooth.",
     ],
@@ -105,7 +105,7 @@ const experience = [
     achievements: [
       "Delivered high-traffic landing pages & PDPs (Nutriclub, Bebelac, SGM, BTPN) end-to-end, responsive, pixel perfect UI with Lighthouse scores up 15–25 pts.",
       "Built the BTPN Tariff Calculator with robust validation and error states maintained accuracy and increased form completion by 10–20%.",
-      "Structured SCSS + BEM for modular, low conflict CSS, speed up iteration by 20% and reduced styling regressions.",
+      "Structured SCSS and implemented BEM methodology to enable modular, low-conflict CSS, accelerate iteration by 20%, and reduce styling regressions.",
       "Improved perceived performance via responsive images, lazy loading, minification, and reflow minimization with a mobile first UX focus.",
       "Collaborated effectively with designers and backend engineers, clear specs and API contracts enabled smooth integrations.",
     ],

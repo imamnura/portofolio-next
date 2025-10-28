@@ -275,7 +275,7 @@ export default function ContactSection() {
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
-                href="https://drive.google.com/file/d/1M8Bfr2qf5BlxU4wkxb1F50xMd5BGfms5/view?usp=sharing"
+                href="https://drive.google.com/file/d/1aUaY26DBYvGrpetdHkewVcofG9Sc_yj7/view?usp=drive_link"
                 target="_blank"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 border-2 border-gray-300 hover:border-gray-400 dark:border-gray-600 dark:hover:border-gray-500 rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg"
               >

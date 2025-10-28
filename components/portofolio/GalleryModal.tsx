@@ -183,7 +183,7 @@ export default function GalleryModal({
                           src={images[index]?.src}
                           alt={images[index]?.alt ?? ""}
                           className={`absolute inset-0 h-full w-full ${
-                            title === "Moleawiz"
+                            title === "MoLeaWiz"
                               ? "object-contain"
                               : "object-cover"
                           }`}
@@ -248,7 +248,7 @@ export default function GalleryModal({
                             src={img.src}
                             alt={img.alt ?? ""}
                             className={`h-16 w-full ${
-                              title === "Moleawiz"
+                              title === "MoLeaWiz"
                                 ? "object-contain"
                                 : "object-cover"
                             } md:h-20`}
