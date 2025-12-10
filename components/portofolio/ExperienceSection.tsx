@@ -12,7 +12,7 @@ import Image from "next/image";
 const experience = [
   {
     role: "Frontend Developer",
-    period: "November 2020 — Present",
+    period: "November 2020 — October 2025",
     company: "Telkom Indonesia",
     companyLogo: (
       <Image
